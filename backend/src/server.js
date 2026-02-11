@@ -29,5 +29,3 @@ app.listen(PORT, '0.0.0.0', () => {
     console.log("server on port 3000");
 });
 })
-
-//mongodb+srv://gopikrishna1718_db_user:UuydOCCN9hOKM61p@cluster0.1hu9s54.mongodb.net/?appName=Cluster0Ò
