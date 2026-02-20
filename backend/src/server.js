@@ -16,8 +16,10 @@ const PORT = process.env.PORT
 
 // middleware for notes conntrolleur 
 app.use(cors({
-    origin: 'http://localhost:5173', 
+    origin: process.env.FRONTEND_URL || 'http://localhost:5173', 
+    credentials: true
 }))
+
 app.use(express.json());
 app.use(ratelimiter)
 
@@ -25,7 +27,9 @@ app.use('/api/notes', notesRoutes);
 
 connectDB().then(() => {
 
-app.listen(PORT, '0.0.0.0', () => {
-    console.log("server on port 3000");
+    app.listen(PORT, () => {
+        console.log(`Server is running on port ${PORT}`);
+    });
+}).catch(err => {
+    console.error("Failed to connect to DB", err);
 });
-})
