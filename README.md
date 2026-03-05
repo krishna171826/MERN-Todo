@@ -54,6 +54,7 @@ This project was a learning journey: connecting a React frontend to a Node/Expre
 | **Database** | MongoDB (Mongoose) |
 | **API Testing** | Postman |
 
+link : https://merntodo-beta.vercel.app/
 ---
 
 ## 🚀 Getting Started
