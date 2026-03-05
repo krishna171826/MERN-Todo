@@ -1,59 +1,181 @@
 <div align="center">
-  <h1>📝 Fullstack MERN To-Do List</h1>
-  
-  <p align="center">
-    <img src="https://img.shields.io/badge/Status-Terminé-success?style=for-the-badge" />
-    <img src="https://img.shields.io/badge/Maintenu-Oui-blue?style=for-the-badge" />
-    <img src="https://img.shields.io/github/stars/[TON-PSEUDO]/[TON-REPO]?style=for-the-badge" />
-  </p>
 
-  <p><b>Ma toute première application Fullstack réalisée avec la stack MERN (MongoDB, Express, React, Node).</b></p>
+```
+████████╗██╗  ██╗██╗███╗   ██╗██╗  ██╗██████╗  ██████╗  █████╗ ██████╗ ██████╗
+╚══██╔══╝██║  ██║██║████╗  ██║██║ ██╔╝██╔══██╗██╔═══██╗██╔══██╗██╔══██╗██╔══██╗
+   ██║   ███████║██║██╔██╗ ██║█████╔╝ ██████╔╝██║   ██║███████║██████╔╝██║  ██║
+   ██║   ██╔══██║██║██║╚██╗██║██╔═██╗ ██╔══██╗██║   ██║██╔══██║██╔══██╗██║  ██║
+   ██║   ██║  ██║██║██║ ╚████║██║  ██╗██████╔╝╚██████╔╝██║  ██║██║  ██║██████╔╝
+   ╚═╝   ╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝
+```
 
-  <a href="[LIEN-DE-TON-SITE-DEPLOYE]"><strong>Explorer la Démo »</strong></a>
-  <br />
-  <br />
+# 📋 ThinkBoard — A MERN Stack Todo App
+
+**My first full-stack project built with the MERN stack.**  
+Simple. Clean. Gets the job done.
+
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![Express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![DaisyUI](https://img.shields.io/badge/DaisyUI-5A0EF8?style=for-the-badge&logo=daisyui&logoColor=white)
+
 </div>
 
-<hr />
+---
 
-## 📸 Aperçu Graphique
+## 🌟 About the Project
+
+**ThinkBoard** is a collaborative todo list application — my first project built end-to-end using the **MERN stack**. Anyone can visit and add tasks to a shared board, making it a great live experiment in full-stack development.
+
+This project was a learning journey: connecting a React frontend to a Node/Express API, persisting data in MongoDB, and typing everything with TypeScript.
+
+---
+
+## ✨ Features
+
+- ✅ Add new tasks to a shared board
+- 🗑️ Delete tasks
+- 📦 Data persisted in MongoDB
+- 🎨 Clean UI with DaisyUI + Tailwind CSS
+- 🔒 **Coming soon:** User authentication — each user gets their own private workspace
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|---|---|
+| **Frontend** | React.js + TypeScript |
+| **Styling** | Tailwind CSS + DaisyUI |
+| **Backend** | Node.js + Express.js |
+| **Database** | MongoDB (Mongoose) |
+| **API Testing** | Postman |
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+- [Node.js](https://nodejs.org/) (v18+)
+- [MongoDB](https://www.mongodb.com/) (local or Atlas)
+- npm or yarn
+
+### Installation
+
+**1. Clone the repository**
+
+```bash
+git clone https://github.com/your-username/thinkboard.git
+cd thinkboard
+```
+
+**2. Install backend dependencies**
+
+```bash
+cd backend
+npm install
+```
+
+**3. Configure environment variables**
+
+Create a `.env` file in the `backend/` directory:
+
+```env
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+```
+
+**4. Install frontend dependencies**
+
+```bash
+cd ../frontend
+npm install
+```
+
+**5. Run the app**
+
+In two separate terminals:
+
+```bash
+# Terminal 1 — Backend
+cd backend
+npm run dev
+
+# Terminal 2 — Frontend
+cd frontend
+npm run dev
+```
+
+The app will be available at `http://localhost:5173`
+
+---
+
+## 📁 Project Structure
+
+```
+thinkboard/
+├── backend/
+│   ├── src/
+│   │   ├── models/        # Mongoose schemas
+│   │   ├── routes/        # Express routes
+│   │   └── server.ts      # Entry point
+│   └── package.json
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/    # React components
+│   │   ├── pages/         # App pages
+│   │   └── App.tsx        # Root component
+│   └── package.json
+│
+└── README.md
+```
+
+---
+
+## 🔮 Roadmap
+
+This is just the beginning. Here's what's coming next:
+
+- [ ] 🔐 **User Authentication** — JWT-based login/register
+- [ ] 🏠 **Private Workspaces** — Each user manages their own tasks
+- [ ] ✏️ **Edit Tasks** — Update task content inline
+- [ ] 📌 **Task Priority** — Tag tasks as low / medium / high
+- [ ] 🌙 **Dark / Light Mode** toggle
+
+---
+
+## 🧪 API Endpoints
+
+| Method | Endpoint | Description |
+|---|---|---|
+| `GET` | `/api/tasks` | Get all tasks |
+| `POST` | `/api/tasks` | Create a new task |
+| `DELETE` | `/api/tasks/:id` | Delete a task |
+
+---
+
+## 🙋‍♂️ Author
+
+Built with 💪 as my **first MERN stack project**.  
+Still learning, still building.
+
+Feel free to open issues, suggest features, or contribute!
+
+---
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
 <div align="center">
-  <img src="https://via.placeholder.com/800x450.png?text=Capture+Ecran+Application+MERN" alt="Capture d'écran" width="800" style="border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);" />
+  <sub>⭐ If you like this project, leave a star — it means a lot!</sub>
 </div>
-
-## 🛠️ Technologies & Outils
-<div align="center">
-  <table border="0">
-    <tr>
-      <td align="center" width="150">
-        <img src="https://skillicons.dev/icons?i=mongodb" width="40" height="40" alt="MongoDB" />
-        <br /><b>MongoDB</b>
-      </td>
-      <td align="center" width="150">
-        <img src="https://skillicons.dev/icons?i=express" width="40" height="40" alt="Express" />
-        <br /><b>Express</b>
-      </td>
-      <td align="center" width="150">
-        <img src="https://skillicons.dev/icons?i=react" width="40" height="40" alt="React" />
-        <br /><b>React</b>
-      </td>
-      <td align="center" width="150">
-        <img src="https://skillicons.dev/icons?i=nodejs" width="40" height="40" alt="Node.js" />
-        <br /><b>Node.js</b>
-      </td>
-    </tr>
-    <tr>
-      <td align="center" width="150">
-        <img src="https://skillicons.dev/icons?i=tailwind" width="40" height="40" alt="Tailwind" />
-        <br /><b>Tailwind CSS</b>
-      </td>
-      <td align="center" width="150">
-         <img src="https://raw.githubusercontent.com/saadeghi/daisyui-logo/master/logo.svg" width="40" height="40" alt="DaisyUI" />
-        <br /><b>DaisyUI</b>
-      </td>
-      <td align="center" width="150">
-        <img src="https://skillicons.dev/icons?i=postman" width="40" height="40" alt="Postman" />
-        <br /><b>Postman</b>
-      </td>
-      <td align="center" width="150">
-        <img src="
