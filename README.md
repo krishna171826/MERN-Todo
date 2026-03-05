@@ -116,28 +116,7 @@ The app will be available at `http://localhost:5173`
 
 ---
 
-## 📁 Project Structure
 
-```
-thinkboard/
-├── backend/
-│   ├── src/
-│   │   ├── models/        # Mongoose schemas
-│   │   ├── routes/        # Express routes
-│   │   └── server.ts      # Entry point
-│   └── package.json
-│
-├── frontend/
-│   ├── src/
-│   │   ├── components/    # React components
-│   │   ├── pages/         # App pages
-│   │   └── App.tsx        # Root component
-│   └── package.json
-│
-└── README.md
-```
-
----
 
 ## 🔮 Roadmap
 
@@ -148,31 +127,6 @@ This is just the beginning. Here's what's coming next:
 - [ ] ✏️ **Edit Tasks** — Update task content inline
 - [ ] 📌 **Task Priority** — Tag tasks as low / medium / high
 - [ ] 🌙 **Dark / Light Mode** toggle
-
----
-
-## 🧪 API Endpoints
-
-| Method | Endpoint | Description |
-|---|---|---|
-| `GET` | `/api/tasks` | Get all tasks |
-| `POST` | `/api/tasks` | Create a new task |
-| `DELETE` | `/api/tasks/:id` | Delete a task |
-
----
-
-## 🙋‍♂️ Author
-
-Built with 💪 as my **first MERN stack project**.  
-Still learning, still building.
-
-Feel free to open issues, suggest features, or contribute!
-
----
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
