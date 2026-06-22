@@ -1,6 +1,6 @@
 <div align="center">
 
-```
+```text
 ████████╗██╗  ██╗██╗███╗   ██╗██╗  ██╗██████╗  ██████╗  █████╗ ██████╗ ██████╗
 ╚══██╔══╝██║  ██║██║████╗  ██║██║ ██╔╝██╔══██╗██╔═══██╗██╔══██╗██╔══██╗██╔══██╗
    ██║   ███████║██║██╔██╗ ██║█████╔╝ ██████╔╝██║   ██║███████║██████╔╝██║  ██║
@@ -9,10 +9,10 @@
    ╚═╝   ╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝
 ```
 
-# 📋 ThinkBoard — A MERN Stack Todo App
+# 📋 ThinkBoard — Une application Todo en MERN Stack
 
-**My first full-stack project built with the MERN stack.**  
-Simple. Clean. Gets the job done.
+**Mon premier projet full-stack développé avec la stack MERN.**  
+Simple. Épuré. Efficace.
 
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
 ![Express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
@@ -26,82 +26,88 @@ Simple. Clean. Gets the job done.
 
 ---
 
-## 🌟 About the Project
+## 🌟 À propos du projet
 
-**ThinkBoard** is a collaborative todo list application — my first project built end-to-end using the **MERN stack**. Anyone can visit and add tasks to a shared board, making it a great live experiment in full-stack development.
+**ThinkBoard** est une application collaborative de gestion de tâches (Todo List), représentant mon premier projet développé de bout en bout avec la **stack MERN**.
 
-This project was a learning journey: connecting a React frontend to a Node/Express API, persisting data in MongoDB, and typing everything with TypeScript.
+N'importe quel utilisateur peut accéder à l'application et ajouter des tâches à un tableau partagé, ce qui en fait un excellent projet d'apprentissage du développement full-stack.
 
----
-
-## ✨ Features
-
-- ✅ Add new tasks to a shared board
-- 🗑️ Delete tasks
-- 📦 Data persisted in MongoDB
-- 🎨 Clean UI with DaisyUI + Tailwind CSS
-- 🔒 **Coming soon:** User authentication — each user gets their own private workspace
+Ce projet m'a permis de découvrir et de mettre en pratique :
+- la connexion d'une interface React à une API Node/Express ;
+- la persistance des données avec MongoDB ;
+- l'utilisation de TypeScript sur l'ensemble du projet.
 
 ---
 
-## 🛠️ Tech Stack
+## ✨ Fonctionnalités
 
-| Layer | Technology |
+- ✅ Ajouter de nouvelles tâches à un tableau partagé
+- 🗑️ Supprimer des tâches
+- 📦 Sauvegarde des données dans MongoDB
+- 🎨 Interface moderne avec DaisyUI et Tailwind CSS
+- 🔒 **À venir :** authentification des utilisateurs afin que chacun dispose de son propre espace de travail privé
+
+---
+
+## 🛠️ Technologies utilisées
+
+| Couche | Technologie |
 |---|---|
 | **Frontend** | React.js + TypeScript |
-| **Styling** | Tailwind CSS + DaisyUI |
+| **Style** | Tailwind CSS + DaisyUI |
 | **Backend** | Node.js + Express.js |
-| **Database** | MongoDB (Mongoose) |
-| **API Testing** | Postman |
+| **Base de données** | MongoDB (Mongoose) |
+| **Tests d'API** | Postman |
 
-link : https://merntodo-beta.vercel.app/
+**🔗 Démo en ligne :** https://merntodo-beta.vercel.app/
+
 ---
 
-## 🚀 Getting Started
+## 🚀 Prise en main
 
-### Prerequisites
+### Prérequis
 
-Make sure you have the following installed:
+Assurez-vous d'avoir installé :
 
-- [Node.js](https://nodejs.org/) (v18+)
-- [MongoDB](https://www.mongodb.com/) (local or Atlas)
-- npm or yarn
+- [Node.js](https://nodejs.org/) (v18 ou supérieur)
+- [MongoDB](https://www.mongodb.com/) (installation locale ou MongoDB Atlas)
+- npm ou yarn
 
 ### Installation
 
-**1. Clone the repository**
+**1. Cloner le dépôt**
 
 ```bash
 git clone https://github.com/your-username/thinkboard.git
 cd thinkboard
 ```
 
-**2. Install backend dependencies**
+**2. Installer les dépendances du backend**
 
 ```bash
 cd backend
 npm install
 ```
 
-**3. Configure environment variables**
+**3. Configurer les variables d'environnement**
 
-Create a `.env` file in the `backend/` directory:
+Créez un fichier `.env` dans le dossier `backend/` :
 
 ```env
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
 ```
 
-**4. Install frontend dependencies**
+**4. Installer les dépendances du frontend**
 
 ```bash
 cd ../frontend
 npm install
 ```
 
-**5. Run the app**
+**5. Lancer l'application**
 
-In two separate terminals:
+Ouvrez deux terminaux :
 
 ```bash
 # Terminal 1 — Backend
@@ -113,24 +119,26 @@ cd frontend
 npm run dev
 ```
 
-The app will be available at `http://localhost:5173`
+L'application sera accessible à l'adresse :
+
+```text
+http://localhost:5173
+```
 
 ---
 
+## 🔮 Feuille de route
 
+Ce projet n'est que le début. Voici les prochaines fonctionnalités prévues :
 
-## 🔮 Roadmap
-
-This is just the beginning. Here's what's coming next:
-
-- [ ] 🔐 **User Authentication** — JWT-based login/register
-- [ ] 🏠 **Private Workspaces** — Each user manages their own tasks
-- [ ] ✏️ **Edit Tasks** — Update task content inline
-- [ ] 📌 **Task Priority** — Tag tasks as low / medium / high
-- [ ] 🌙 **Dark / Light Mode** toggle
+- [ ] 🔐 **Authentification des utilisateurs** — connexion/inscription avec JWT
+- [ ] 🏠 **Espaces de travail privés** — chaque utilisateur gère ses propres tâches
+- [ ] ✏️ **Modification des tâches** — édition directe du contenu
+- [ ] 📌 **Priorité des tâches** — faible / moyenne / élevée
+- [ ] 🌙 **Mode sombre / clair** — bascule entre les thèmes
 
 ---
 
 <div align="center">
-  <sub>⭐ If you like this project, leave a star — it means a lot!</sub>
+  <sub>⭐ Si ce projet vous plaît, n'hésitez pas à laisser une étoile sur GitHub, cela me ferait très plaisir !</sub>
 </div>
